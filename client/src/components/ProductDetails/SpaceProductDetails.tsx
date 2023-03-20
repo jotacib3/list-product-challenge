@@ -8,7 +8,7 @@ import { ISpaceProduct } from "../../models/Product";
 function SpaceProductDetails({product}: { product: ISpaceProduct }) {
     return (
         <div className="ml-2">
-            Location: {product.location}  - <a href=""> Show in Google Map</a>
+            Location: {product.location}  - <a href=""><strong>Show in Google Map</strong></a>
             <br/>
             Availability: {product.availability}
         </div>

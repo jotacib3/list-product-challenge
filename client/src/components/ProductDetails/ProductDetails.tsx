@@ -13,15 +13,15 @@ interface IProductDetailsProps {
  * @param product - The product to render
  */
 function ProductDetails({ product }: IProductDetailsProps) {
-    const {__typename_: type, ...productDetails} = product;
+    const {__typename: type, ...productDetails} = product;
 
     const renderDetails = () => {
         switch (type) {
-            case 'simple':
+            case 'SimpleProduct':
                 return <SimpleProductDetails product={productDetails as ISimpleProduct} />;
-            case 'rentable':
+            case 'RentableProduct':
                 return <RentableProductDetails product={productDetails as IRentableProduct} />;
-            case 'space':
+            case 'SpaceProduct':
                 return <SpaceProductDetails product={productDetails as ISpaceProduct} />;
             default:
                 return null;

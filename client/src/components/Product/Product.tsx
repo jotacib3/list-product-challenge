@@ -7,11 +7,15 @@ interface IProductProps {
     product: IProduct;
 }
 
+/**
+ * This component is responsible for rendering a product in a card
+ * @param product - The product to render
+ */
 function Product({product}: IProductProps) {
     const [showDetails, setShowDetails] = useState(false);
 
     const handleShowDetails = () => setShowDetails((prevState) => !prevState);
-
+    console.log(product);
     return (
         <div className="w-full sm:w-1/2 md:w-1/2 xl:w-1/4 p-4">
             <div className="c-card block bg-white shadow-md hover:shadow-xl rounded-lg overflow-hidden">
