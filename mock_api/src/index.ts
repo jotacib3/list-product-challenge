@@ -90,7 +90,7 @@ const resolvers = {
                 id: '3',
                 name: 'Salón de fiestas',
                 sellerName: 'Vendedor 3',
-                image: 'https://via.placeholder.com/150',
+                image: 'https://images.unsplash.com/photo-1475855581690-80accde3ae2b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80',
                 price: 200.99,
                 location: 'Ciudad de México',
                 availability: '2022-01-01',
