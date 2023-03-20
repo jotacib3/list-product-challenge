@@ -11,7 +11,8 @@ requerida para esta prueba, solo use un array con datos de prueba
 
 ## Un detalle de los data model y estructuras de datos utilizadas, si es que aplican.
 Para los types e interfaces de graphql están en mock_api/server.ts
-Para las interfaces usadas en el frontend están en 
+
+Para las interfaces usadas en el frontend están en  client/models/Product
 
 ## Ejemplos de las consultas que se van a hacer al back-end utilizando GraphQL.
 - Está en el archivo client/graphql/queries/get-products.ts
