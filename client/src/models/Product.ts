@@ -4,6 +4,7 @@ export interface IProduct {
     sellerName: string;
     image: string;
     price: number;
+    __typename_: string
 }
 
 export interface ISimpleProduct extends IProduct {

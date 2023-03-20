@@ -11,7 +11,6 @@ function App() {
     if (loading) return (<div>Loading...</div>);
     if (error) return (<div>Error! ${error.message}</div>);
 
-    console.log(data, typeof data);
     return (
           <div className="antialiased bg-gray-200 text-gray-900 font-sans p-6">
             <ProductList products={data?.products} />

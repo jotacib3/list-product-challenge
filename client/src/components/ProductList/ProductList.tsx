@@ -1,18 +1,22 @@
 import React from 'react';
-import ProductOverview from "../ProductOverview/ProductOverview";
 
 import { IDetailedProduct } from "../../models/Product";
+import Product from "../Product/Product";
 
 interface IProductListProps {
     products: IDetailedProduct[] | undefined;
 }
 
+/**
+ * This component is responsible for rendering a list of products
+ * @param products - The products to render
+ */
 const ProductList = ({ products }: IProductListProps) =>
     (
         <div className="container mx-auto">
             <div className="flex flex-wrap -mx-4">
                 {!!products && products.map((product) => (
-                    <ProductOverview key={product.id} product={product} />
+                    <Product key={product.id} product={product} />
                 ))}
             </div>
         </div>
